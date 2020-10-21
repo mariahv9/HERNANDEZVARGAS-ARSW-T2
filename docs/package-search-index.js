@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"edu.eci.arsw.weather"},{"l":"edu.eci.arsw.weather.api"},{"l":"edu.eci.arsw.weather.model"},{"l":"edu.eci.arsw.weather.service"},{"l":"weatherAPITest"}]

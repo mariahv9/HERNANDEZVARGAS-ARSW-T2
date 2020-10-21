@@ -1,0 +1,5 @@
+edu.eci.arsw.weather
+edu.eci.arsw.weather.api
+edu.eci.arsw.weather.model
+edu.eci.arsw.weather.service
+weatherAPITest
