@@ -9,7 +9,7 @@ var app = (function () {
     function getWeather() {
         name = $("#country").val();
         var url = window.location;
-        var urlnew = url.protocol+"//"+url.host + "/weather/"+name;
+        var urlNew = url.protocol+"//"+url.host + "/weather/"+name;
         var getPromise = $.get(urlNew);
         getPromise.then(
             function(data){
@@ -17,7 +17,6 @@ var app = (function () {
                 table_Countries(info);
             }
         );
-//        getByName(name);
     }
 
     function map(name){
@@ -37,27 +36,12 @@ var app = (function () {
     }
 
     function table_Countries(data){
-        $("#countries").empty();
-        data.map(function(element){
-            var markup = "<tr onclick=app.getWeather()> <td>"+ element.descripcion +"</td> <td>"+element.principal+"</td> </tr>";
-            $("#countries").append(markup)
-        });
-    }
+        console.log (data);
+        $("#countryName").empty();
+        var markup = "<tr><td>"+ data.name +"</td> <td>"+data.base+"</td> <td>"+data.weather[0].main+"</td> <td>"+data.weather[0].description+"</td> <td>"+data.wind.deg+"</td> <td>"+data.wind.speed+"</td> <td>"+data.coord.lon+"</td> <td>"+data.coord.lat+"</td> <td>"+data.clouds.all+"</td> <td>"+data.main.temp+"</td> <td>"+data.main.humidity+"</td> <td>"+data.main.pressure+"</td> </tr>";
+        console.log(markup);
+        $("#countryName").append(markup)
 
-    function getByName(name) {
-        var url = window.location;
-        var urlNew = url.protocol+"//"+url.host + "/coronavirus/"+name;
-        var getPromise = $.get(urlNew);
-        getPromise.then(
-            function(data){
-                var info = JSON.parse(data);
-                showTableProvinces(info.data.covid19Stats);
-            },
-            function(){
-                console.log('error')
-            }
-        );
-        return getPromise;
     }
 
     return {

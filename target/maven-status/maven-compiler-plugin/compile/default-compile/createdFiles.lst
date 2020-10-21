@@ -1,7 +1,0 @@
-edu\eci\arsw\weather\service\WeatherException.class
-edu\eci\arsw\weather\WeatherAplication.class
-edu\eci\arsw\weather\model\WeatherStats.class
-edu\eci\arsw\weather\service\HTTPConnection.class
-edu\eci\arsw\weather\service\WeatherService.class
-edu\eci\arsw\weather\api\WeatherController.class
-edu\eci\arsw\weather\model\WeatherStats$1.class
