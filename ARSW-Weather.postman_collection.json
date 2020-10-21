@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "fc7343b3-cef4-44a0-ae3e-c4d09abe5dd5",
+		"_postman_id": "406d6b00-a065-4acf-aa18-3381cc475935",
 		"name": "ARSW-Weather",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -33,6 +33,28 @@
 							"value": "f4d50a547866b0ad5622bd2b8d2f7145"
 						}
 					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCoords",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
 				}
 			},
 			"response": []
